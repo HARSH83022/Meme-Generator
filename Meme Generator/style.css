@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+}
+
+.meme-generator {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 80px; /* Add margin to prevent overlap with footer */
+}
+
+.meme-generator img {
+    max-height: 430px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+}
+
+.meme-generator .generate-meme-btn {
+    padding: 12px 24px;
+    border: none;
+    border-left: 4px solid #222;
+    border-right: 4px solid #222;
+    margin: 24px 0;
+    font-size: 20px;
+    color: #fff;
+    background: #f64d4d;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.meme-generator .generate-meme-btn:hover {
+    background: #e03e3e;
+    letter-spacing: 2px;
+}
+
+.meme-generator .meme-title {
+    margin: 16px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.meme-generator .meme-author {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #666;
+}
+
+.meme-generator .meme-actions {
+    margin-top: 20px;
+}
+
+.meme-generator .save-meme-btn, .meme-generator .share-meme-btn {
+    padding: 8px 16px;
+    border: none;
+    margin: 8px;
+    font-size: 16px;
+    color: #fff;
+    background: #4CAF50;
+    cursor: pointer;
+    transition: all 400ms ease;
+    border-radius: 5px;
+}
+
+.meme-generator .save-meme-btn:hover, .meme-generator .share-meme-btn:hover {
+    background: #45a049;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer {
+    text-align: center;
+    padding: 0px;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer a {
+    color: #f64d4d;
+    text-decoration: none;
+}
